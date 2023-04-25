@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.MainPage">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#1f7df0" Offset="0.2"/>
+            <GradientStop Color="#1ae871" Offset="1.3"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Login" 
+                    BorderColor="White" 
+                    BorderWidth="2" 
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent" 
+                    TextColor="White"
+                    Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
