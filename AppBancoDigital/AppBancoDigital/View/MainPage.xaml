@@ -1,26 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.MainPage">
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="#1f7df0" Offset="0.2"/>
-            <GradientStop Color="#1ae871" Offset="1.3"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
-    
+             x:Class="AppBancoDigital.View.MainPage"
+             BackgroundColor="#5f259f">
+
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Login" 
+            <Label Text="BANCO" 
+                   FontSize="75"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   Margin="0,100,0,0"/>
+            
+            <Button Text="Entrar"  
+                    WidthRequest="300"
+                    HorizontalOptions="Center"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    BackgroundColor="White" 
+                    TextColor="#5f259f"
+                    Clicked="Button_Clicked_1"
+                    Margin="0,350,0,0"/>
+            
+            <Button Text="Cadastrar" 
                     BorderColor="White" 
                     BorderWidth="2" 
-                    WidthRequest="200"
+                    WidthRequest="300"
                     HorizontalOptions="Center"
                     FontSize="18"
                     FontAttributes="Bold"
                     BackgroundColor="Transparent" 
                     TextColor="White"
-                    Clicked="Button_Clicked"/>
+                    Clicked="Button_Clicked"
+                    />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -23,5 +23,10 @@ namespace AppBancoDigital.View
         {
             Navigation.PushAsync(new FormAdicionar());
         }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

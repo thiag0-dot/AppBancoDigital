@@ -8,13 +8,36 @@
             <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" HorizontalOptions="Center"
                                VerticalOptions="Center"/>
 
-            <Label Text="Nome:"/>
-            <Entry x:Name="txt_nome"/>
-            <Label Text="Data Nascimento: " />
+            <Label Text="Criar Conta"
+                   FontAttributes="Bold"
+                   TextColor="#aaaaaa"
+                   FontSize="50"
+                   />
+            <Label Text="Digite seu nome completo:"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   FontSize="Subtitle"
+                   Margin="0,50,0,0"/>
+            <Entry x:Name="txt_nome" 
+                   Placeholder="Ex: Lucas Gomes"
+                   />
+            
+            <Label Text="Data Nascimento: " 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   FontSize="Subtitle"/>
             <DatePicker x:Name="dtpck_data_nasc" />
-            <Label Text="CPF: " />
+            
+            <Label Text="CPF: " 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   FontSize="Subtitle"/>
             <Entry Keyboard="Numeric" x:Name="txt_cpf"/>
-            <Label Text="Senha: " />
+            
+            <Label Text="Senha: " 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   FontSize="Subtitle"/>
             <Entry x:Name="txt_senha" />
 
             <Button Text="Salvar" 
