@@ -13,44 +13,65 @@
                    TextColor="#aaaaaa"
                    FontSize="50"
                    />
-            <Label Text="Digite seu nome completo:"
+
+            <StackLayout Padding="20">
+                <Label Text="Digite seu nome completo:"
                    FontAttributes="Bold"
                    TextColor="Black"
                    FontSize="Subtitle"
                    Margin="0,50,0,0"/>
-            <Entry x:Name="txt_nome" 
-                   Placeholder="Ex: Lucas Gomes"
-                   />
+                <Entry x:Name="txt_nome" 
+                       Placeholder="Ex: Lucas Gomes"
+                       />
             
-            <Label Text="Data Nascimento: " 
-                   FontAttributes="Bold"
-                   TextColor="Black"
-                   FontSize="Subtitle"/>
-            <DatePicker x:Name="dtpck_data_nasc" />
+                <Label Text="Data Nascimento: " 
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       FontSize="Subtitle"
+                       Margin="0,20,0,0"/>
+                <DatePicker x:Name="dtpck_data_nasc"  
+                            />
             
-            <Label Text="CPF: " 
-                   FontAttributes="Bold"
-                   TextColor="Black"
-                   FontSize="Subtitle"/>
-            <Entry Keyboard="Numeric" x:Name="txt_cpf"/>
+                <Label Text="CPF: " 
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       FontSize="Subtitle"
+                       Margin="0,20,0,0"/>
+                <Entry Keyboard="Numeric" x:Name="txt_cpf"
+                       Placeholder="67815041000"/>
             
-            <Label Text="Senha: " 
-                   FontAttributes="Bold"
-                   TextColor="Black"
-                   FontSize="Subtitle"/>
-            <Entry x:Name="txt_senha" />
+                <Label Text="Digite a sua senha: " 
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       FontSize="Subtitle"
+                       Margin="0,20,0,0"/>
+                <Entry x:Name="txt_senha" 
+                       IsPassword="True"/>
 
-            <Button Text="Salvar" 
-                    BorderColor="White" 
-                    BorderWidth="2" 
-                    WidthRequest="200"
-                    HorizontalOptions="Center"
-                    FontSize="18"
-                    FontAttributes="Bold"
-                     
-                    TextColor="White"
-                    Clicked="Button_Clicked_1"/>
+                
 
+                <Button Text="Salvar" 
+                        WidthRequest="250"
+                        HorizontalOptions="Center"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        BackgroundColor="#5f259f"
+                        TextColor="White"
+                        Clicked="Button_Clicked_1"
+                        Margin="0,20,0,0"/>
+                
+                <Button Text="Voltar" 
+                        WidthRequest="250"
+                        HorizontalOptions="Center"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        BorderWidth="2"
+                        BorderColor="#5f259f"
+                        BackgroundColor="Transparent"
+                        TextColor="#5f259f"
+                        Clicked="Button_Clicked"
+                        Margin="0,5,0,0"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
     

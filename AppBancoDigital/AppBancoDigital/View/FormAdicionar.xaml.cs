@@ -17,26 +17,29 @@ namespace AppBancoDigital.View
         public FormAdicionar()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
             act_carregando.IsRunning = true;
             act_carregando.IsVisible= true;
-
+            
+            
             try
             {
                 await DataServiceCorrentista.Cadastrar(new Correntista
                 {
                     Nome = txt_nome.Text,
                     Data_Nasc = dtpck_data_nasc.Date,
-                    Senha= txt_senha.Text,
-                    Cpf= Convert.ToInt64(txt_cpf.Text)
+                    Senha = txt_senha.Text,
+                    Cpf = Convert.ToInt64(txt_cpf.Text)
                 });
 
                 await DisplayAlert("Sucesso!", "Sua Conta foi criada!", "OK");
 
-                
+
             }
             catch (Exception ex)
             {
@@ -44,9 +47,16 @@ namespace AppBancoDigital.View
             }
             finally
             {
-                act_carregando.IsRunning= false;
-                act_carregando.IsVisible= false;
+                act_carregando.IsRunning = false;
+                act_carregando.IsVisible = false;
             }
+        }
+
+
+            
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
         }
     }
 }
