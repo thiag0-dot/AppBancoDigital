@@ -1,47 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.FormAdicionar">
+             x:Class="AppBancoDigital.View.Login">
     <ContentPage.Content>
         <StackLayout>
 
             <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" HorizontalOptions="Center"
                                VerticalOptions="Center"/>
 
-            <Label Text="Criar Conta"
+            <Label Text="Entrar"
                    FontAttributes="Bold"
                    TextColor="#aaaaaa"
                    FontSize="50"
-                   Margin="0,30,0,0"
-                   HorizontalOptions="Center"
                    />
 
             <StackLayout Padding="20">
-                <Label Text="Digite seu nome completo:"
+                <Label Text="Digite CPF da conta:"
                    FontAttributes="Bold"
                    TextColor="Black"
                    FontSize="Subtitle"
-                   Margin="0,20,0,0"/>
-                <Entry x:Name="txt_nome" 
-                       Placeholder="Ex: Lucas Gomes"
+                   Margin="0,50,0,0"/>
+                <Entry x:Name="txt_cpf" 
                        />
-            
-                <Label Text="Data Nascimento: " 
-                       FontAttributes="Bold"
-                       TextColor="Black"
-                       FontSize="Subtitle"
-                       Margin="0,20,0,0"/>
-                <DatePicker x:Name="dtpck_data_nasc"  
-                            />
-            
-                <Label Text="CPF: " 
-                       FontAttributes="Bold"
-                       TextColor="Black"
-                       FontSize="Subtitle"
-                       Margin="0,20,0,0"/>
-                <Entry Keyboard="Numeric" x:Name="txt_cpf"
-                       Placeholder="67815041000"/>
-            
+
                 <Label Text="Digite a sua senha: " 
                        FontAttributes="Bold"
                        TextColor="Black"
@@ -50,18 +31,18 @@
                 <Entry x:Name="txt_senha" 
                        IsPassword="True"/>
 
-                
 
-                <Button Text="Salvar" 
+
+                <Button Text="Entrar" 
                         WidthRequest="250"
                         HorizontalOptions="Center"
                         FontSize="18"
                         FontAttributes="Bold"
                         BackgroundColor="#5f259f"
                         TextColor="White"
-                        Clicked="Button_Clicked_1"
-                        Margin="0,50,0,0"/>
-                
+                        Clicked="Button_Clicked"
+                        Margin="0,20,0,0"/>
+
                 <Button Text="Voltar" 
                         WidthRequest="250"
                         HorizontalOptions="Center"
@@ -71,10 +52,9 @@
                         BorderColor="#5f259f"
                         BackgroundColor="Transparent"
                         TextColor="#5f259f"
-                        Clicked="Button_Clicked"
+                        Clicked="Button_Clicked_1"
                         Margin="0,5,0,0"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
-    
 </ContentPage>
