@@ -12,6 +12,9 @@
                    FontAttributes="Bold"
                    TextColor="#aaaaaa"
                    FontSize="50"
+                   FontFamily="P"
+                   Margin="0, 30,0,0"
+                   HorizontalOptions="Center"
                    />
 
             <StackLayout Padding="20">
@@ -19,14 +22,17 @@
                    FontAttributes="Bold"
                    TextColor="Black"
                    FontSize="Subtitle"
+                   FontFamily="F"
                    Margin="0,50,0,0"/>
                 <Entry x:Name="txt_cpf" 
+                       FontFamily="P"
                        />
 
                 <Label Text="Digite a sua senha: " 
                        FontAttributes="Bold"
                        TextColor="Black"
                        FontSize="Subtitle"
+                       FontFamily="F"
                        Margin="0,20,0,0"/>
                 <Entry x:Name="txt_senha" 
                        IsPassword="True"/>
@@ -40,6 +46,7 @@
                         FontAttributes="Bold"
                         BackgroundColor="#5f259f"
                         TextColor="White"
+                        FontFamily="F"
                         Clicked="Button_Clicked"
                         Margin="0,20,0,0"/>
 
@@ -52,6 +59,7 @@
                         BorderColor="#5f259f"
                         BackgroundColor="Transparent"
                         TextColor="#5f259f"
+                        FontFamily="F"
                         Clicked="Button_Clicked_1"
                         Margin="0,5,0,0"/>
             </StackLayout>

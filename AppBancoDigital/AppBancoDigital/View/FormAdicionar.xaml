@@ -14,6 +14,7 @@
                    FontSize="50"
                    Margin="0,30,0,0"
                    HorizontalOptions="Center"
+                   FontFamily="P"
                    />
 
             <StackLayout Padding="20">
@@ -21,32 +22,41 @@
                    FontAttributes="Bold"
                    TextColor="Black"
                    FontSize="Subtitle"
+                   FontFamily="F"
                    Margin="0,20,0,0"/>
                 <Entry x:Name="txt_nome" 
                        Placeholder="Ex: Lucas Gomes"
+                       FontFamily="P"
+                       PlaceholderColor="#aaaaaa"
                        />
             
                 <Label Text="Data Nascimento: " 
                        FontAttributes="Bold"
                        TextColor="Black"
                        FontSize="Subtitle"
-                       Margin="0,20,0,0"/>
-                <DatePicker x:Name="dtpck_data_nasc"  
+                       Margin="0,20,0,0"
+                       FontFamily="F"/>
+                <DatePicker x:Name="dtpck_data_nasc" 
+                            FontFamily="Pika"
+                            
                             />
             
                 <Label Text="CPF: " 
                        FontAttributes="Bold"
                        TextColor="Black"
                        FontSize="Subtitle"
-                       Margin="0,20,0,0"/>
+                       Margin="0,20,0,0"
+                       FontFamily="F"/>
                 <Entry Keyboard="Numeric" x:Name="txt_cpf"
-                       Placeholder="67815041000"/>
+                       Placeholder="67815041000"
+                       FontFamily="P"/>
             
                 <Label Text="Digite a sua senha: " 
                        FontAttributes="Bold"
                        TextColor="Black"
                        FontSize="Subtitle"
-                       Margin="0,20,0,0"/>
+                       Margin="0,20,0,0"
+                       FontFamily="F"/>
                 <Entry x:Name="txt_senha" 
                        IsPassword="True"/>
 
@@ -60,7 +70,8 @@
                         BackgroundColor="#5f259f"
                         TextColor="White"
                         Clicked="Button_Clicked_1"
-                        Margin="0,50,0,0"/>
+                        Margin="0,50,0,0"
+                        FontFamily="F"/>
                 
                 <Button Text="Voltar" 
                         WidthRequest="250"
@@ -72,7 +83,8 @@
                         BackgroundColor="Transparent"
                         TextColor="#5f259f"
                         Clicked="Button_Clicked"
-                        Margin="0,5,0,0"/>
+                        Margin="0,5,0,0"
+                        FontFamily="F"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

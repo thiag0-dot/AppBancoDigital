@@ -19,6 +19,8 @@ namespace AppBancoDigital.View
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
+
+            dtpck_data_nasc.MaximumDate= DateTime.Now.AddDays(-(365*18));
         }
 
         private async void Button_Clicked_1(object sender, EventArgs e)
