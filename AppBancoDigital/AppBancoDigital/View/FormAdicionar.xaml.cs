@@ -36,7 +36,7 @@ namespace AppBancoDigital.View
                     Nome = txt_nome.Text,
                     Data_Nasc = dtpck_data_nasc.Date,
                     Senha = txt_senha.Text,
-                    Cpf = Convert.ToInt64(txt_cpf.Text)
+                    Cpf = txt_cpf.Text
                 });
 
                 await DisplayAlert("Sucesso!", "Sua Conta foi criada!", "OK");

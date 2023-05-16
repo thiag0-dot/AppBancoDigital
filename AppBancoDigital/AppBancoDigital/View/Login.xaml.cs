@@ -23,15 +23,18 @@ namespace AppBancoDigital.View
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
+            string cpf = txt_cpf.Text;
+            string senha = txt_senha.Text;
+
             try
             {
-                await DataServiceCorrentista.Entrar(new Correntista
+                Correntista correntista = await DataServiceCorrentista.GetCorrentistaByCpfAndSenha(new Correntista
                 {
-                    Senha = txt_senha.Text,
-                    Cpf = Convert.ToInt64(txt_cpf.Text)
+                    Cpf = cpf,
+                    Senha = senha
                 });
 
-                
+                await Navigation.PushAsync(new View.FormEdit());
 
             }
             catch (Exception ex)

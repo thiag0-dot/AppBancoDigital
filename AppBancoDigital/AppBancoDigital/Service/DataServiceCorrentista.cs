@@ -4,7 +4,7 @@ using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text;
-
+using Xamarin.Forms;
 
 namespace AppBancoDigital.Service
 {
@@ -19,12 +19,13 @@ namespace AppBancoDigital.Service
             return true;
         }
 
-        public static async Task<bool> Entrar(Correntista q)
+        public static async Task<Correntista> GetCorrentistaByCpfAndSenha(Correntista model)
         {
-            var json_a_enviar = JsonConvert.SerializeObject(q);
+            var json_a_enviar = JsonConvert.SerializeObject(model);
 
             string json = await DataService.PostDataToService(json_a_enviar, "/correntista/entrar");
-            return true;
+
+            return JsonConvert.DeserializeObject<Correntista>(json);
         }
     }
 }
