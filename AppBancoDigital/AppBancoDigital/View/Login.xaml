@@ -28,12 +28,14 @@
                        FontFamily="P"
                        />
 
+
                 <Label Text="Digite a sua senha: " 
                        FontAttributes="Bold"
                        TextColor="Black"
                        FontSize="Subtitle"
                        FontFamily="F"
-                       Margin="0,20,0,0"/>
+                       Margin="0,20,0,0"
+                       />
                 <Entry x:Name="txt_senha" 
                        IsPassword="True"/>
 

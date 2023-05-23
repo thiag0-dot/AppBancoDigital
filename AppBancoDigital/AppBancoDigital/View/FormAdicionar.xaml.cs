@@ -40,7 +40,7 @@ namespace AppBancoDigital.View
                 });
 
                 await DisplayAlert("Sucesso!", "Sua Conta foi criada!", "OK");
-
+                await Navigation.PushAsync(new View.MainPage()) ;
 
             }
             catch (Exception ex)

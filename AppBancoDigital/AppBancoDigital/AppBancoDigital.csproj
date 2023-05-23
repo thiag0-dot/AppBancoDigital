@@ -11,6 +11,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NovaPasta1\**" />
+    <Compile Remove="NovaPasta2\**" />
+    <Compile Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="NovaPasta1\**" />
+    <EmbeddedResource Remove="NovaPasta2\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <None Remove="NovaPasta1\**" />
+    <None Remove="NovaPasta2\**" />
+    <None Remove="NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="View\FormAdd.xaml.cs" />
     <Compile Remove="View\FormEditar.xaml.cs" />
   </ItemGroup>
@@ -24,6 +36,7 @@
     <None Remove="Assets\GraphikBold.otf" />
     <None Remove="Assets\GraphikMedium.otf" />
     <None Remove="Assets\GraphikRegular.otf" />
+    <None Remove="Assets\MaterialIcons-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +47,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Assets\GraphikRegular.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\MaterialIcons-Regular.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
@@ -49,6 +65,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\FormEdit.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Home.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Login.xaml">

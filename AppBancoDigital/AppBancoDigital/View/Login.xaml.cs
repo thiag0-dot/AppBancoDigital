@@ -14,11 +14,13 @@ namespace AppBancoDigital.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
+        
         public Login()
         {
             InitializeComponent(); 
 
             NavigationPage.SetHasNavigationBar(this,false);
+            
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
@@ -34,7 +36,7 @@ namespace AppBancoDigital.View
                     Senha = senha
                 });
 
-                await Navigation.PushAsync(new View.FormEdit());
+                await Navigation.PushAsync(new View.Home());
 
             }
             catch (Exception ex)
