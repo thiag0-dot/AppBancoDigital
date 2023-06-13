@@ -18,7 +18,7 @@
                    />
 
             <StackLayout Padding="20">
-                <Label Text="Digite CPF da conta:"
+                <Label Text="Digite o CPF da conta:"
                    FontAttributes="Bold"
                    TextColor="Black"
                    FontSize="Subtitle"

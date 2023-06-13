@@ -6,14 +6,21 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="BANCO" 
-                   FontSize="75"
+            <Label Text="&#xe84f;" 
+                   FontSize="150"
                    TextColor="White"
                    HorizontalOptions="Center"
                    FontAttributes="Bold"
-                   FontFamily="F"
-                   Margin="0,100,0,0"/>
-            
+                   FontFamily="icons"
+                   Margin="0, 70,0,0"/>
+            <Label Text="BANK"
+                   FontSize="40"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   FontFamily="P"
+                   Margin="0,0,9,0"/>
+
+
             <Button Text="Entrar"  
                     WidthRequest="300"
                     HorizontalOptions="Center"
@@ -21,7 +28,7 @@
                     FontAttributes="Bold"
                     BackgroundColor="White" 
                     TextColor="#5f259f"
-                    FontFamily="F"
+                    FontFamily="P"
                     Clicked="Button_Clicked_1"
                     Margin="0,350,0,0"/>
             
@@ -35,7 +42,7 @@
                     BackgroundColor="Transparent" 
                     TextColor="White"
                     Clicked="Button_Clicked"
-                    FontFamily="F"
+                    FontFamily="P"
                     />
         </StackLayout>
     </ContentPage.Content>

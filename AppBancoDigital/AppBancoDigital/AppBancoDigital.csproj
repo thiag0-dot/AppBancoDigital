@@ -28,11 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="View\FormAdd.xaml" />
-    <EmbeddedResource Remove="View\FormEditar.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Assets\GraphikBold.otf" />
     <None Remove="Assets\GraphikMedium.otf" />
     <None Remove="Assets\GraphikRegular.otf" />

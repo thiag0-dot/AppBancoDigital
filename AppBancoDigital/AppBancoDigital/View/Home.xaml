@@ -9,7 +9,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <StackLayout Grid.Row="0" BackgroundColor="#5f259f" Padding="15">
+            <StackLayout Grid.Row="0" BackgroundColor="#5f259f" Padding="20" Spacing="20">
                 <StackLayout Orientation="Horizontal">
                     <Button Text="&#xe7fd;" FontFamily="icons" FontSize="30" TextColor="White"
                             WidthRequest="50"
@@ -21,14 +21,61 @@
                     <Button Text="&#xe8f4;" FontFamily="icons" FontSize="30" TextColor="White"
                             WidthRequest="50"
                             HeightRequest="50"
-                            BackgroundColor="#4c0677"
+                            BackgroundColor="#5f259f"
                             CornerRadius="100"
-                            
-                            HorizontalOptions="StartAndExpand"/>
+                            Clicked="Button_Clicked_1"/>
+                    <Button Text="&#xe887;" FontFamily="icons" FontSize="30" TextColor="White"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            BackgroundColor="#5f259f"
+                            CornerRadius="100"
+                            Padding="10"
+                            />
+                    <Button Text="&#xe158;" FontFamily="icons" FontSize="30" TextColor="White"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            BackgroundColor="#5f259f"
+                            CornerRadius="100"
+                            Padding="10"
+                            />
                     
                 </StackLayout>
                 
+                <Label Grid.Column="1" VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Olá, " FontFamily="P" FontSize="20" TextColor="White" />
+                            <Span Text="{Binding Nome}" FontFamily="P" FontSize="20" TextColor="White" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Frame HeightRequest="120" CornerRadius="15">
+                    <StackLayout>
+                        <Label Text="Criar Conta Poupança" TextColor="Black" BackgroundColor="White"
+                           FontFamily="P" FontSize="24" HorizontalOptions="Start" HorizontalTextAlignment="Start"
+                           WidthRequest="200"/>
+                        <Button Text="Eu quero" Margin="0,20,0,0"
+                                CornerRadius="50" HeightRequest="40"
+                                WidthRequest="100" HorizontalOptions="Start"
+                                BackgroundColor="#5f259f" TextColor="White"/>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
+            
+            <StackLayout Grid.Row="1" Padding="20" Spacing="20">
+                <Label Text="Conta" TextColor="Black" FontSize="20" FontFamily="P"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="R$ " TextColor="Black" FontSize="24" FontFamily="P"/>
+                            <Span Text="0,00" x:Name="Value" TextColor="Black" FontSize="24" FontFamily="P"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+            </StackLayout>
+
         </Grid>
     </ScrollView>
 </ContentPage>

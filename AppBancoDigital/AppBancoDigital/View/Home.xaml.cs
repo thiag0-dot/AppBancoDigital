@@ -17,5 +17,13 @@ namespace AppBancoDigital.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        bool hideCorrente = false;
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            hideCorrente = !hideCorrente;
+            ((Button)sender).Text = (hideCorrente) ? "\uE8f4" : "\uE8f5";
+            Value.Text = (hideCorrente) ? " *****" : Value.Text = "0,00";
+        }
     }
 }

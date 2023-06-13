@@ -36,7 +36,10 @@ namespace AppBancoDigital.View
                     Senha = senha
                 });
 
-                await Navigation.PushAsync(new View.Home());
+                await Navigation.PushAsync(new View.Home()
+                {
+                    BindingContext = correntista
+                });
 
             }
             catch (Exception ex)
