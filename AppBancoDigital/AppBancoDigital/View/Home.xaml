@@ -52,30 +52,74 @@
 
                 <Frame HeightRequest="120" CornerRadius="15">
                     <StackLayout>
-                        <Label Text="Criar Conta Poupança" TextColor="Black" BackgroundColor="White"
+                        <Label Text="Veja detalhes da sua conta" TextColor="Black" BackgroundColor="White"
                            FontFamily="P" FontSize="24" HorizontalOptions="Start" HorizontalTextAlignment="Start"
                            WidthRequest="200"/>
-                        <Button Text="Eu quero" Margin="0,20,0,0"
+                        <Button Text="Acessar" Margin="0,20,0,0"
                                 CornerRadius="50" HeightRequest="40"
                                 WidthRequest="100" HorizontalOptions="Start"
                                 BackgroundColor="#5f259f" TextColor="White"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>
-            
+
             <StackLayout Grid.Row="1" Padding="20" Spacing="20">
                 <Label Text="Conta" TextColor="Black" FontSize="20" FontFamily="P"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="R$ " TextColor="Black" FontSize="24" FontFamily="P"/>
-                            <Span Text="0,00" x:Name="Value" TextColor="Black" FontSize="24" FontFamily="P"/>
+                            <Span Text="1000,00" x:Name="Value" TextColor="Black" FontSize="24" FontFamily="P"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                        <StackLayout>
+                            <Button Text="&#xeb70;" FontFamily="icons" FontSize="25" BackgroundColor="#f0f1f5" CornerRadius="50" HorizontalOptions="CenterAndExpand" HeightRequest="70" WidthRequest="70" Padding="20"/>
+                            <Label Text="Pix" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Text="&#xe00a;" FontFamily="icons" FontSize="25" BackgroundColor="#f0f1f5" CornerRadius="50" HorizontalOptions="CenterAndExpand" HeightRequest="70" WidthRequest="70" Padding="20"/>
+                            <Label Text="Pagar" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Text="&#xe8e4;" FontFamily="icons" FontSize="25" BackgroundColor="#f0f1f5" CornerRadius="50" HorizontalOptions="CenterAndExpand" HeightRequest="70" WidthRequest="70" Padding="20"/>
+                            <Label Text="Transferir" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Text="&#xf206;" FontFamily="icons" FontSize="25" BackgroundColor="#f0f1f5" CornerRadius="50" HorizontalOptions="CenterAndExpand" HeightRequest="70" WidthRequest="70" Padding="20"/>
+                            <Label Text="Cobrar" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Text="&#xe870;" FontFamily="icons" FontSize="25" BackgroundColor="#f0f1f5" CornerRadius="50" HorizontalOptions="CenterAndExpand" HeightRequest="70" WidthRequest="70" Padding="20"/>
+                            <Label Text="Emprestimo" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Text="&#xe325;" FontFamily="icons" FontSize="25" BackgroundColor="#f0f1f5" CornerRadius="50" HorizontalOptions="CenterAndExpand" HeightRequest="70" WidthRequest="70" Padding="20"/>
+                            <Label Text="Recarga" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+                <Frame BackgroundColor="#f0f1f5">
+                    <StackLayout>
+                        <Label Text="Conta Poupança" TextColor="Black" FontSize="20" FontFamily="P"/>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="R$ " TextColor="Black" FontSize="24" FontFamily="P"/>
+                                    <Span Text="1000,00" x:Name="Value2" TextColor="Black" FontSize="24" FontFamily="P"/>
+                                    <Span Text=" &#xe8e5; " FontSize="20" FontFamily="icons"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label Text="Limite disponível: R$ 0,00" FontSize="13" FontFamily="P"/>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
-
+            
         </Grid>
     </ScrollView>
+    
+    
 </ContentPage>

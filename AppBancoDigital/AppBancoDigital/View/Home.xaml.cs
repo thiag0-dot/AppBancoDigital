@@ -23,7 +23,8 @@ namespace AppBancoDigital.View
         {
             hideCorrente = !hideCorrente;
             ((Button)sender).Text = (hideCorrente) ? "\uE8f4" : "\uE8f5";
-            Value.Text = (hideCorrente) ? " *****" : Value.Text = "0,00";
+            Value.Text = (hideCorrente) ? " *****" : Value.Text = "1000,00";
+            Value2.Text = (hideCorrente) ? " *****" : Value2.Text = "1000,00";
         }
     }
 }
