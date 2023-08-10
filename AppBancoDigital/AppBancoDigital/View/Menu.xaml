@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.Menu">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="#4c0677">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0"
+                             BackgroundColor="#FFFFFF"
+                             Padding="10"
+                             Margin="10"
+                             HorizontalOptions="FillAndExpand">
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" Spacing="10" Margin="10" Padding="10" BackgroundColor="#FFFFFF">
+
+                    <Button Text="Home" Clicked="Button_Clicked"/>
+
+                    <Button Text="Sair" Clicked="Button_Clicked_1"/>
+
+                </StackLayout>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
