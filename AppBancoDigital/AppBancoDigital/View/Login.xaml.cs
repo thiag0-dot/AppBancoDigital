@@ -52,5 +52,7 @@ namespace AppBancoDigital.View
         {
             Navigation.PushAsync(new MainPage());
         }
+
+        
     }
 }

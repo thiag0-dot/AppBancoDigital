@@ -8,16 +8,8 @@
             <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" HorizontalOptions="Center"
                                VerticalOptions="Center"/>
 
-            <Label Text="Criar Conta"
-                   FontAttributes="Bold"
-                   TextColor="#aaaaaa"
-                   FontSize="50"
-                   Margin="0,30,0,0"
-                   HorizontalOptions="Center"
-                   FontFamily="P"
-                   />
 
-            <StackLayout Padding="20">
+            <StackLayout Padding="20" x:Name="TelaDeNome" IsVisible="true">
                 <Label Text="Digite seu nome completo:"
                    FontAttributes="Bold"
                    TextColor="Black"
@@ -29,7 +21,10 @@
                        FontFamily="P"
                        PlaceholderColor="#aaaaaa"
                        />
-            
+            </StackLayout>
+
+            <StackLayout Padding="20" x:Name="TelaDeData" IsVisible="false">
+
                 <Label Text="Data Nascimento: " 
                        FontAttributes="Bold"
                        TextColor="Black"
@@ -40,7 +35,10 @@
                             FontFamily="Pika"
                             
                             />
-            
+            </StackLayout>
+
+
+            <StackLayout Padding="20" x:Name="TelaDeCpf" IsVisible="false">
                 <Label Text="CPF: " 
                        FontAttributes="Bold"
                        TextColor="Black"
@@ -50,7 +48,9 @@
                 <Entry Keyboard="Numeric" x:Name="txt_cpf"
                        Placeholder="67815041000"
                        FontFamily="P"/>
-            
+            </StackLayout>
+
+            <StackLayout Padding="20" x:Name="TelaDaSenha" IsVisible="false">
                 <Label Text="Digite a sua senha: " 
                        FontAttributes="Bold"
                        TextColor="Black"
@@ -59,8 +59,6 @@
                        FontFamily="F"/>
                 <Entry x:Name="txt_senha" 
                        IsPassword="True"/>
-
-                
 
                 <Button Text="Salvar" 
                         WidthRequest="250"
