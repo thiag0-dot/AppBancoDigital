@@ -10,20 +10,58 @@
 
 
             <StackLayout Padding="20" x:Name="TelaDeNome" IsVisible="true">
-                <Label Text="Digite seu nome completo:"
-                   FontAttributes="Bold"
+                <Button Text="&#xe5cd;" FontFamily="icons" FontSize="30" 
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="2"
+                        BackgroundColor="Transparent"
+                        CornerRadius="100"
+                        Margin="0,0,310,0"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="Button_Clicked"/>
+                
+                <Label Text="Boas-Vindas ao Bank! &#10;Para começar, qual o seu Nome?"
                    TextColor="Black"
-                   FontSize="Subtitle"
-                   FontFamily="F"
-                   Margin="0,20,0,0"/>
+                   FontSize="30"
+                   FontFamily="P"
+                   Margin="0,0,0,0"/>
+
+                <Label Text="Precisamos dele para dar início ao seu cadastro" 
+                       FontSize="20"
+                       Margin="0,20,0,0"
+                       FontFamily="p"/>
+
                 <Entry x:Name="txt_nome" 
-                       Placeholder="Ex: Lucas Gomes"
+                       Placeholder="Seu Nome:"
                        FontFamily="P"
                        PlaceholderColor="#aaaaaa"
+                       FontSize="25"
                        />
+
+
+
+                <Button Text="&#xe5c8;" FontFamily="icons" FontSize="30" TextColor="White"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BackgroundColor="#4c0677"
+                        CornerRadius="100"
+                        Padding="10"
+                        HorizontalOptions="StartAndExpand"
+                        Margin="300,370,0,0"
+                        Clicked="Button_Clicked_2"   
+                        />
             </StackLayout>
 
             <StackLayout Padding="20" x:Name="TelaDeData" IsVisible="false">
+                <Button Text="&#xe5e0;" FontFamily="icons" FontSize="30" 
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="2"
+                        BackgroundColor="Transparent"
+                        CornerRadius="100"
+                        Margin="0,0,330,0"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="Button_Clicked_5"/>
 
                 <Label Text="Data Nascimento: " 
                        FontAttributes="Bold"
@@ -32,9 +70,21 @@
                        Margin="0,20,0,0"
                        FontFamily="F"/>
                 <DatePicker x:Name="dtpck_data_nasc" 
-                            FontFamily="Pika"
+                            FontFamily="P"
                             
                             />
+
+                <Button Text="&#xe7fd;" FontFamily="icons" FontSize="30" TextColor="White"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BackgroundColor="#4c0677"
+                        CornerRadius="100"
+                        Padding="10"
+                        HorizontalOptions="StartAndExpand"
+                        Margin="300,500,0,0"
+                        Clicked="Button_Clicked_3"/>
+
+                
             </StackLayout>
 
 
@@ -48,6 +98,29 @@
                 <Entry Keyboard="Numeric" x:Name="txt_cpf"
                        Placeholder="67815041000"
                        FontFamily="P"/>
+
+                <Button Text="&#xe7fd;" FontFamily="icons" FontSize="30" TextColor="White"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BackgroundColor="#4c0677"
+                        CornerRadius="100"
+                        Padding="10"
+                        HorizontalOptions="StartAndExpand"
+                        Margin="300,500,0,0" 
+                        Clicked="Button_Clicked_4"/>
+                
+                <Button Text="&#xe7fd;" FontFamily="icons" FontSize="30" 
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="2"
+                        BorderColor="#5f259f"
+                        BackgroundColor="Transparent"
+                        TextColor="#5f259f"
+                        CornerRadius="100"
+                        Padding="10"
+                        Margin="300,0,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="Button_Clicked_6"/>
             </StackLayout>
 
             <StackLayout Padding="20" x:Name="TelaDaSenha" IsVisible="false">
@@ -80,7 +153,7 @@
                         BorderColor="#5f259f"
                         BackgroundColor="Transparent"
                         TextColor="#5f259f"
-                        Clicked="Button_Clicked"
+                        Clicked="Button_Clicked_7"
                         Margin="0,5,0,0"
                         FontFamily="F"/>
             </StackLayout>

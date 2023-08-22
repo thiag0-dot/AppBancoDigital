@@ -60,5 +60,41 @@ namespace AppBancoDigital.View
         {
             Navigation.PushAsync(new MainPage());
         }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            TelaDeNome.IsVisible = false;
+            TelaDeData.IsVisible = true;
+        }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            TelaDeData.IsVisible = false;
+            TelaDeCpf.IsVisible = true;
+        }
+
+        private void Button_Clicked_4(object sender, EventArgs e)
+        {
+            TelaDeCpf.IsVisible = false;
+            TelaDaSenha.IsVisible = true;
+        }
+
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            TelaDeNome.IsVisible = true;
+            TelaDeData.IsVisible = false;
+        }
+
+        private void Button_Clicked_6(object sender, EventArgs e)
+        {
+            TelaDeData.IsVisible = true;
+            TelaDeCpf.IsVisible = false;
+        }
+
+        private void Button_Clicked_7(object sender, EventArgs e)
+        {
+            TelaDaSenha.IsVisible = false;
+            TelaDeCpf.IsVisible=true;
+        }
     }
 }
