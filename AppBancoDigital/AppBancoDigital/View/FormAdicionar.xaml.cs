@@ -63,6 +63,7 @@ namespace AppBancoDigital.View
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
+            
             TelaDeNome.IsVisible = false;
             TelaDeData.IsVisible = true;
         }
@@ -95,6 +96,10 @@ namespace AppBancoDigital.View
         {
             TelaDaSenha.IsVisible = false;
             TelaDeCpf.IsVisible=true;
+        }
+        private void txt_nome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            NomeParaData.BackgroundColor = (txt_nome.Text != null) ? Color.FromHex("#4c0677") : Color.FromHex("#f0f1f5");
         }
     }
 }
