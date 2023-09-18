@@ -35,11 +35,16 @@ namespace AppBancoDigital.View
                     Cpf = cpf,
                     Senha = senha
                 });
+                
 
                 await Navigation.PushAsync(new View.Home()
                 {
                     BindingContext = correntista
-                });
+                    
+                });;
+
+
+                    
 
             }
             catch (Exception ex)

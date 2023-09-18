@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppBancoDigital.Model;
+using AppBancoDigital.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +27,19 @@ namespace AppBancoDigital.View
             ((Button)sender).Text = (hideCorrente) ? "\uE8f4" : "\uE8f5";
             Value.Text = (hideCorrente) ? " *****" : Value.Text = "1000,00";
             Value2.Text = (hideCorrente) ? " *****" : Value2.Text = "1000,00";
+        }
+
+        protected override async void OnAppearing()
+        {
+            Correntista c = BindingContext as Correntista;
+
+            List<Conta> contas = await DataServiceConta.GetContasByIDCorrentista(c);
+
+            foreach (Conta conta in contas)
+            {
+                await DisplayAlert(conta.Id.ToString(), conta.Saldo.ToString("C"), "OK");
+            }
+
         }
     }
 }
